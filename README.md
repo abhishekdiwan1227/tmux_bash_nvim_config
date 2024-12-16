@@ -1,1 +1,1 @@
-## personal base config for .tmux.conf and .bashrc
+## personal base config tmux-nvim-vifm

@@ -503,3 +503,6 @@ nnoremap zb :split<cr>
 nnoremap zv :vsplit<cr>
 nnoremap zz :vsplit<cr>:sync %c<cr><tab>
 nnoremap zx <c-w>h:only<cr>
+nnoremap <c-d> :q<cr>
+set viewcolumns=-{name},-{ext},-{perms}
+set vicmd=nvim

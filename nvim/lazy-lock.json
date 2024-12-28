@@ -1,0 +1,7 @@
+{
+  "fzf": { "branch": "master", "commit": "97030d4cb10d9b1c51f2afd60e14c6e46a7fe4ba" },
+  "fzf.vim": { "branch": "master", "commit": "556f45e79ae5e3970054fee4c4373472604a1b4e" },
+  "lazy.nvim": { "branch": "main", "commit": "7e6c863bc7563efbdd757a310d17ebc95166cef3" },
+  "lazyvim": { "branch": "main", "commit": "a3a28bf8e43f7239316942c2f2bac6e74b28586b" },
+  "plenary.nvim": { "branch": "master", "commit": "2d9b06177a975543726ce5c73fca176cedbffe9d" }
+}

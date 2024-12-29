@@ -2,6 +2,5 @@
 vim.wo.relativenumber = true
 
 require('config.lazy');
-
-require('keymaps.init');
-
+require('keymaps')
+require('langsupport')

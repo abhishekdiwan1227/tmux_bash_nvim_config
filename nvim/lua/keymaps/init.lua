@@ -1,4 +1,5 @@
 vim.api.nvim_set_keymap('n', '<Leader>f', ':Files<CR>', { noremap = true, silent = true })
-vim.api.nvim_set_keymap('n', '<S-d>c', ':q<CR>', { noremap = true, silent = false })
-vim.api.nvim_set_keymap('n', '<S-d>s', ':q!<CR>', { noremap = true, silent = false })
-vim.api.nvim_set_keymap('n', '<S-d>n', ':noh<CR>', { noremap = true, silent = false })
+vim.api.nvim_set_keymap('n', '<Leader>n', ':tabnew<CR>', { noremap = true, silent = false })
+vim.api.nvim_set_keymap('n', 'm', ':noh<CR>', { noremap = true, silent = false })
+vim.api.nvim_set_keymap('n', '<Tab>', 'gt', { noremap = true, silent = false })
+vim.api.nvim_set_keymap('n', '<S-Tab>', 'gT', { noremap = true, silent = false })

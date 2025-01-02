@@ -506,3 +506,4 @@ nnoremap zx <c-w>h:only<cr>
 nnoremap <c-d> :q<cr>
 set viewcolumns=-{name},-{ext},-{perms}
 set vicmd=nvim
+colorscheme palenight

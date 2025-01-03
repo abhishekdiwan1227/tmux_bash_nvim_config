@@ -1,5 +1,5 @@
 local lspconfig = require('lspconfig')
-mason_lspconfig = require("mason-lspconfig")
+local mason_lspconfig = require("mason-lspconfig")
 local capabilities = vim.lsp.protocol.make_client_capabilities()
 local conform = require('conform')
 local cmp = require('cmp')
@@ -7,6 +7,7 @@ local lint = require('lint')
 
 local cmp_capabilities = require('cmp_nvim_lsp').default_capabilities()
 vim.tbl_extend('force', capabilities, cmp_capabilities)
+require("luasnip.loaders.from_vscode").lazy_load()
 
 lspconfig.lua_ls.setup {}
 lspconfig.gopls.setup {
@@ -61,5 +62,8 @@ lint.linters_by_ft = {
 	lua = { "luac" }
 }
 
-vim.api.nvim_buf_set_keymap(0, 'n', 'cr', ':lua vim.lsp.buf.rename()<CR>', { noremap = true, silent = true })
-vim.api.nvim_buf_set_keymap(0, 'n', '..', ':lua vim.lsp.buf.format()<CR>', { noremap = true, silent = true })
+
+
+vim.api.nvim_set_keymap('n', 'gb', 'viw:lua vim.lsp.buf.rename()<CR>', { noremap = true, silent = false })
+vim.api.nvim_set_keymap('v', '..', ':lua vim.lsp.buf.format()<CR>', { noremap = true, silent = false })
+vim.api.nvim_set_keymap('n', '<S-l>', ':lua vim.diagnostic.open_float()<CR>', { noremap = true, silent = false })

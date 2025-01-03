@@ -28,7 +28,11 @@ require("lazy").setup({
 		"hrsh7th/cmp-path",
 		"hrsh7th/cmp-cmdline",
 		"hrsh7th/nvim-cmp",
-		"L3MON4D3/LuaSnip",
+		{
+			"L3MON4D3/LuaSnip",
+			run = "make install_jsregexp",
+			dependencies = { "rafamadriz/friendly-snippets" },
+		},
 		"saadparwaiz1/cmp_luasnip",
 		{ "stevearc/conform.nvim", opts = {}, },
 		"mfussenegger/nvim-lint"

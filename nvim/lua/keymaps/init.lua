@@ -3,3 +3,5 @@ vim.api.nvim_set_keymap('n', '<Leader>n', ':tabnew<CR>', { noremap = true, silen
 vim.api.nvim_set_keymap('n', 'm', ':noh<CR>', { noremap = true, silent = false })
 vim.api.nvim_set_keymap('n', '<Tab>', 'gt', { noremap = true, silent = false })
 vim.api.nvim_set_keymap('n', '<S-Tab>', 'gT', { noremap = true, silent = false })
+vim.api.nvim_set_keymap('n', 'cx', ':bw<CR>', { noremap = true, silent = false })
+vim.api.nvim_set_keymap('n', 'czx', ':bw!<CR>', { noremap = true, silent = false })
